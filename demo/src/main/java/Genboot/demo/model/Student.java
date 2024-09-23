@@ -10,11 +10,7 @@ import lombok.Data;
 @Entity
 @Data
 @Table(name="Student")
-public class Student {
-
-    @Id
-    @Column(name = "id")
-    private int id;
+public class Student extends BaseEntity {
 
     @Column(name = "marks")
     private int marks;
@@ -24,8 +20,6 @@ public class Student {
 
     @Column(name = "age")
     private int age;
-
-
 
 }
 
