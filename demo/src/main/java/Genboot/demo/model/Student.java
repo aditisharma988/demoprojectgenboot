@@ -1,9 +1,6 @@
 package Genboot.demo.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 
@@ -20,6 +17,10 @@ public class Student extends BaseEntity {
 
     @Column(name = "age")
     private int age;
+
+//    @OneToOne
+//    @JoinColumn(name ="cloud_vendor_id")
+//    private CloudVendor cloudVendor;
 
 }
 

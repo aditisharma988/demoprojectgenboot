@@ -1,6 +1,7 @@
 package Genboot.demo.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
 
@@ -13,4 +14,8 @@ public class CloudVendor extends BaseEntity {
     private String vendorAddress;
     private String vendorPhoneNumber;
 
+//    @OneToOne(mappedBy = "cloudVendor")
+//    private Student student;
+
 }
+
