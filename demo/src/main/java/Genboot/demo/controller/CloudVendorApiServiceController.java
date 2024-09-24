@@ -37,7 +37,7 @@ public class CloudVendorApiServiceController {
 
 
     //update a cloud vendor
-    @PutMapping("{Id}/update")
+    @PutMapping("/update/{Id}")
     public String updateCloudVendorDetails(@PathVariable("Id") Long Id,@RequestBody CloudVendor cloudVendor )
     {
         cloudVendorService.update(Id, cloudVendor);
@@ -55,7 +55,7 @@ public class CloudVendorApiServiceController {
 
 
     //delete a cloud vendor
-    @DeleteMapping("/{Id}/delete")
+    @DeleteMapping("/delete/{Id}")
     public String deleteCloudVendorDetails(@PathVariable("Id") Long Id )
     {
          cloudVendorService.delete(Id);
